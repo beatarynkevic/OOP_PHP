@@ -6,11 +6,5 @@
             "email": "beata.rynkevic1@gmail.com"
         }
     ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Miskas\\Didelis\\": "bla/",
-            "Miskas\\Mazas\\": "bla/"
-        }
-    }
+    "require": {}
 }
