@@ -10,6 +10,9 @@ ir kiek banknotų. Parašyti metodą monetos, kuris skaičiuotų kiek yra pinigi
 banknotai - popierinių pinigų skaičiavimui. -->
 <?php
 class Pinigine {
+
+
+    // su masyvu ir saugoti sesijoje
     private $popieriniaiPinigai;
     private $metaliniaiPinigai;
 
@@ -74,7 +77,9 @@ class Stikline {
     }
 
     public function ispilti() {
-        return $this->kiekis;
+        $likutis = $this->kiekis;
+        $this->kiekis = 0;
+        return $likutis;
     }
 }
 
@@ -89,7 +94,7 @@ $trecia_stikline->setTuris(100);
 
 $pirma_stikline->ipilti(200);
 $antra_stikline->ipilti($pirma_stikline->ispilti());
-$trecia_stikline->ipilti($antra_stikline->ipilti($pirma_stikline->ispilti()) );
+$trecia_stikline->ipilti($antra_stikline->ispilti() );
 
 
 
