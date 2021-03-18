@@ -1,6 +1,6 @@
 <?php
 
-class Udra extends River {
+class Udra extends River implements Miskas, Giria {
 
 
     public function __construct()
@@ -22,6 +22,10 @@ class Udra extends River {
             echo $words;
         }
     }
+
+    public function abstrakti_funkcija(string $a1) : void{}
+
+    public function abstrakti_funkcija2(string $a1) : void{}
 
 }
 

@@ -17,7 +17,7 @@ abstract class River extends Eat {
         $this->river = $river;
     }
 
-    abstract public function saySomething(string $words);
+    abstract protected function saySomething(string $words);
 }
 
 // abstraktu metoda turi PARENT. Child'e, turi buti tas metodas, su tais paciais parametrais(argumentais)
