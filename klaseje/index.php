@@ -1,27 +1,31 @@
 <?php
-include __DIR__.'/Bebras.php';
-include __DIR__.'/Udra.php';
 
-// echo Bebras::$legs = 55;
-Bebras::createBebras();
-$objektas= new Bebras(12);
+
+
+
+include __DIR__ .'/Eat.php';
+include __DIR__ .'/River.php';
+
+include __DIR__ .'/Bebras.php';
+include __DIR__ .'/Udra.php';
+
+
+$obj1 = new Bebras;
 $obj2 = new Bebras;
-$obj3= new Udra;
+$obj3 = new Udra;
 
-$objektas->tail = "Small";
-echo Bebras::$legs;
-// echo $objektas->tail;
+$obj1->setRiver('Amazon');
 
-// $objektas->sayTail();
-// $objektas->setAge(40);
-// $objektas->getAge();
-
-
-$objektas->$Udra;
-echo $objektas->dog; //privatus metodas
-
-
+$obj3->setRiver('Nill');
 
 echo '<pre>';
-var_dump($objektas);
-?>
+
+
+// $obj1->gold;
+
+echo Bebras::$color;
+
+echo '<br>';
+var_dump($obj1);
+var_dump($obj2);
+var_dump($obj3);

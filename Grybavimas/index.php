@@ -1,6 +1,6 @@
 <?php
-include 'bla\Krepsys.php';
-include 'Miskas\Mazas\Grybas.php';
+include 'bla\Grybas.php';
+include 'Miskas\Didelis\Krepsys.php';
 include 'vendor\autoload.php';
 
 spl_autoload_register(function ($class) {
